@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | pt’s blog</title>
+    <title>第一篇文章 | pt’s blog</title>
     <meta name="author" content="潘婷" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -37,6 +37,10 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
 
 
 
@@ -158,71 +162,117 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>第一篇文章</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/10/22
+        </span>
+        
+        <span class="category">
+            <a href="/categories/vue/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                vue
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
             
-<div id="archives">
-    
-    <div id="timeline-wrap" ref="timeline">
-        
-        <div class="timeline" data-title="helloworld">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/10/22</div>
-                <a href="/2024/10/22/hello-world/">
-                    <h3>Hello World</h3>
+            
+            <span class="tag">
+                
+                <a href="/tags/vue2/" style="color: #03a9f4">
+                    vue2
                 </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="第一篇文章">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/10/22</div>
-                <a href="/2024/10/22/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
-                    <h3>第一篇文章</h3>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/vue3/" style="color: #00bcd4">
+                    vue3
                 </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/vue/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            vue
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/vue2/" style="color: #00a596">
-                                vue2
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/vue3/" style="color: #ff7d73">
-                                vue3
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+            </span>
+            
+        </span>
         
     </div>
+    
+    <div class="content" v-pre>
+        <h1 id="day01"><a href="#day01" class="headerlink" title="day01"></a>day01</h1><h2 id="一、为什么要学习Vue"><a href="#一、为什么要学习Vue" class="headerlink" title="一、为什么要学习Vue"></a>一、为什么要学习Vue</h2><p>1.前端必备技能</p>
+<p>2.岗位多，绝大互联网公司都在使用Vue</p>
+<p>3.提高开发效率</p>
+<p>4.高薪必备技能（Vue2+Vue3）</p>
+<p>5.filter把符合要求的过滤出来</p>
+<h2 id="二、什么是Vue"><a href="#二、什么是Vue" class="headerlink" title="二、什么是Vue"></a>二、什么是Vue</h2><p>概念：Vue (读音 &#x2F;vjuː&#x2F;，类似于 view) 是一套 **构建用户界面 ** 的 <strong>渐进式</strong> <strong>框架</strong></p>
+<p>Vue2官网：<a target="_blank" rel="noopener" href="https://v2.cn.vuejs.org/">https://v2.cn.vuejs.org/</a></p>
+<h3 id="1-什么是构建用户界面"><a href="#1-什么是构建用户界面" class="headerlink" title="1.什么是构建用户界面"></a>1.什么是构建用户界面</h3><p><strong>基于数据</strong>渲染出用户可以看到的<strong>界面</strong></p>
+<h3 id="2-什么是渐进式"><a href="#2-什么是渐进式" class="headerlink" title="2.什么是渐进式"></a>2.什么是渐进式</h3><p>所谓渐进式就是循序渐进，不一定非得把Vue中的所有API都学完才能开发Vue，可以学一点开发一点</p>
+<h4 id="Vue的两种开发方式："><a href="#Vue的两种开发方式：" class="headerlink" title="Vue的两种开发方式："></a>Vue的两种开发方式：</h4><ol>
+<li><p>Vue核心包开发</p>
+<p>场景：局部模块改造</p>
+</li>
+<li><p>Vue核心包&amp;Vue插件&amp;工程化</p>
+<p>场景：整站开发</p>
+</li>
+</ol>
+<h3 id="3-什么是框架"><a href="#3-什么是框架" class="headerlink" title="3.什么是框架"></a>3.什么是框架</h3><p>所谓框架：就是一套完整的解决方案</p>
+<p><strong>举个栗子</strong>	</p>
+<p>如果把一个完整的项目比喻为一个装修好的房子，那么框架就是一个毛坯房。</p>
+<p>我们只需要在“毛坯房”的基础上，增加功能代码即可。</p>
+<p>提到框架，不得不提一下库。</p>
+<ul>
+<li>库，类似工具箱，是一堆方法的集合，比如 axios、lodash、echarts等</li>
+<li>框架，是一套完整的解决方案，实现了大部分功能，我们只需要按照一定的规则去编码即可。</li>
+</ul>
+<p>下图是 库 和 框架的对比。</p>
+<p>框架的特点：有一套必须让开发者遵守的<strong>规则</strong>或者<strong>约束</strong></p>
+<p>咱们学框架就是学习的这些规则 <a target="_blank" rel="noopener" href="https://v2.cn.vuejs.org/">官网</a></p>
+<h3 id="总结：什么是Vue？"><a href="#总结：什么是Vue？" class="headerlink" title="总结：什么是Vue？"></a>总结：什么是Vue？</h3><p>Vue是什么：</p>
+<p>什么是构建用户界面：</p>
+<p>什么是渐进式：</p>
+<p>什么是框架：</p>
+<h2 id="三、创建Vue实例"><a href="#三、创建Vue实例" class="headerlink" title="三、创建Vue实例"></a>三、创建Vue实例</h2><p>我们已经知道了Vue框架可以 基于数据帮助我们渲染出用户界面，那应该怎么做呢？</p>
+<p>比如就上面这个数据，基于提供好的msg 怎么渲染后右侧可展示的数据呢？</p>
+<p><strong>核心步骤（4步）：</strong></p>
+<ol>
+<li>准备容器</li>
+<li>引包（官网） — 开发版本&#x2F;生产版本</li>
+<li>创建Vue实例  new Vue()</li>
+<li>指定配置项，渲染数据<ol>
+<li>el:指定挂载点</li>
+<li>data提供数据</li>
+</ol>
+</li>
+</ol>
+<p><strong>总结：创建Vue实例需要执行哪4步</strong></p>
+<h2 id="四、响应式特性"><a href="#四、响应式特性" class="headerlink" title="四、响应式特性"></a>四、响应式特性</h2><h3 id="1-什么是响应式？"><a href="#1-什么是响应式？" class="headerlink" title="1.什么是响应式？"></a>1.什么是响应式？</h3><p>​	简单理解就是数据变，视图对应变。 </p>
+<h3 id="2-如何访问-和-修改-data中的数据（响应式演示）"><a href="#2-如何访问-和-修改-data中的数据（响应式演示）" class="headerlink" title="2.如何访问 和 修改 data中的数据（响应式演示）"></a>2.如何访问 和 修改 data中的数据（响应式演示）</h3><p>data中的数据, 最终会被添加到实例上</p>
+<p>① 访问数据： “实例.属性名”</p>
+<p>② 修改数据： “实例.属性名”&#x3D; “值”</p>
+<h3 id="3-总结"><a href="#3-总结" class="headerlink" title="3.总结"></a>3.总结</h3><ol>
+<li>什么是响应式</li>
+<li>如何访问和修改data中的数据呢</li>
+</ol>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
 </div>
 
             <footer id="footer">
@@ -253,6 +303,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 
 </body>
