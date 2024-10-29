@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Tags: vue3 | pt’s blog</title>
+    <title>如何解决不显示.iml文件的问题 | pt’s blog</title>
     <meta name="author" content="潘婷" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -37,6 +37,10 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
 
 
 
@@ -162,103 +166,68 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="archives">
-    
-    <div class="categories-tags">
+            <div class="article">
+    <div>
+        <h1>如何解决不显示.iml文件的问题</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/10/29
+        </span>
         
-        
-        
-        <span>
-            <a href="/tags/java/" style="background: #03a9f4">
+        <span class="category">
+            <a href="/categories/java/">
                 <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
                 java
             </a>
         </span>
         
         
-        
-        <span>
-            <a href="/tags/springboot/" style="background: #ffa2c4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                springboot
-            </a>
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/java/" style="color: #ffa2c4">
+                    java
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/springboot/" style="color: #ff7d73">
+                    springboot
+                </a>
+            </span>
+            
         </span>
-        
-        
-        
-        <span>
-            <a href="/tags/vue2/" style="background: #00bcd4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                vue2
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/vue3/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                vue3
-            </a>
-        </span>
-        
-        
-        
         
     </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/10/22</div>
-            <a href="/2024/10/22/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
-                <h3>第一篇文章</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/vue/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        vue
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/vue2/" style="color: #03a9f4">
-                            vue2
-                        </a>
-                    </span>
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/vue3/" style="color: #00bcd4">
-                            vue3
-                        </a>
-                    </span>
-                    
-                </span>
-                
-            </div>
-        </div>
+    <div class="content" v-pre>
+        <p><code>.iml</code> 文件是 IntelliJ IDEA 中的项目文件，用于描述项目的配置和依赖关系。<br>有时，创建出的项目中可能没有该文件，这时可以使用以下方法。</p>
+<p>鼠标放在任意一个模块上，双击Ctrl键，此时会弹出一个新的窗口：</p>
+<p><img src="C:/Users/panting/AppData/Roaming/Typora/typora-user-images/image-20241029210442113.png" alt="image-20241029210442113"></p>
+<p>选择项目-&gt;选中没有.iml文件的模块</p>
+<p><img src="C:/Users/panting/AppData/Roaming/Typora/typora-user-images/image-20241029210548543.png" alt="image-20241029210548543"></p>
+<p>在命令框中输入:   mvn idea:module ，回车</p>
+<p>等待下载，之后就能看到iml文件啦😊</p>
+
     </div>
+    
+    
+    
+    
+    
+    
     
 </div>
 
@@ -290,6 +259,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
