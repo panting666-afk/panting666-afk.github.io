@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>如何解决不显示.iml文件的问题 | pt’s blog</title>
+    <title>创建SpringBoot模块不显示.iml文件 | pt’s blog</title>
     <meta name="author" content="潘婷" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -168,7 +168,7 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>如何解决不显示.iml文件的问题</h1>
+        <h1>创建SpringBoot模块不显示.iml文件</h1>
     </div>
     <div class="info">
         <span class="date">
@@ -196,14 +196,14 @@
             
             <span class="tag">
                 
-                <a href="/tags/java/" style="color: #00bcd4">
+                <a href="/tags/java/" style="color: #ffa2c4">
                     java
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/springboot/" style="color: #ff7d73">
+                <a href="/tags/springboot/" style="color: #00a596">
                     springboot
                 </a>
             </span>
@@ -214,10 +214,8 @@
     
     <div class="content" v-pre>
         <p><code>.iml</code> 文件是 IntelliJ IDEA 中的项目文件，用于描述项目的配置和依赖关系。<br>有时，创建出的项目中可能没有该文件，这时可以使用以下方法。</p>
-<p>鼠标放在任意一个模块上，双击Ctrl键，此时会弹出一个新的窗口：</p>
-<p><img src="C:/Users/panting/AppData/Roaming/Typora/typora-user-images/image-20241029210442113.png" alt="image-20241029210442113"></p>
-<p>选择项目-&gt;选中没有.iml文件的模块</p>
-<p><img src="C:/Users/panting/AppData/Roaming/Typora/typora-user-images/image-20241029210548543.png" alt="image-20241029210548543"></p>
+<p>鼠标放在任意一个模块上，双击Ctrl键，此时会弹出一个新的窗口：<br><img src="/2024/10/29/%E5%88%9B%E5%BB%BASpringBoot%E6%A8%A1%E5%9D%97%E4%B8%8D%E6%98%BE%E7%A4%BA-iml%E6%96%87%E4%BB%B6/p1.png"></p>
+<p>选择项目-&gt;选中没有.iml文件的模块<br><img src="/2024/10/29/%E5%88%9B%E5%BB%BASpringBoot%E6%A8%A1%E5%9D%97%E4%B8%8D%E6%98%BE%E7%A4%BA-iml%E6%96%87%E4%BB%B6/p2.png"></p>
 <p>在命令框中输入:   mvn idea:module ，回车</p>
 <p>等待下载，之后就能看到iml文件啦😊</p>
 
