@@ -40,6 +40,8 @@
 
 
 
+<script src="/js/lib/search.js"></script>
+
 
 
 <link rel="stylesheet" href="/css/main.css" />
@@ -165,6 +167,8 @@
             
 <div id="archives">
     
+    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
+    
     <div id="timeline-wrap" ref="timeline">
         
         <div class="timeline" data-title="第一篇文章">
@@ -194,14 +198,14 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/vue2/" style="color: #00a596">
+                            <a href="/tags/vue2/" style="color: #ff7d73">
                                 vue2
                             </a>
                         </span>
                         
                         <span class="tag">
                             
-                            <a href="/tags/vue3/" style="color: #00bcd4">
+                            <a href="/tags/vue3/" style="color: #00a596">
                                 vue3
                             </a>
                         </span>
@@ -239,14 +243,14 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/java/" style="color: #03a9f4">
+                            <a href="/tags/java/" style="color: #ffa2c4">
                                 java
                             </a>
                         </span>
                         
                         <span class="tag">
                             
-                            <a href="/tags/springboot/" style="color: #00bcd4">
+                            <a href="/tags/springboot/" style="color: #00a596">
                                 springboot
                             </a>
                         </span>
